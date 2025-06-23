@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wine Delivery Kotor | Local Wines Delivered Fast in Montenegro</title>
+  <meta name="description" content="Order red, white, and rosé wines delivered to your door in Kotor, Montenegro. Fast, local delivery with quality Montenegrin wines.">
+  <meta name="keywords" content="wine delivery Kotor, buy wine Montenegro, local wine delivery Kotor, red wine, white wine, rosé, Krstač, Vranac, wine shop Kotor">
+  <meta name="google-site-verification" content="4ijQXLhWGgYBtG0G9aSYAjgswZB4k3ti_Cka4ydxxX0" />  
+  <meta name="author" content="Wine Delivery Kotor">
+  <link rel="canonical" href="https://wine-delievery-kotor.glitch.me/" />
+  <link rel="icon" href="https://cdn.glitch.global/cbe7a86a-c58a-4a44-912e-7c23b197bdaa/IMG_20240713_172249.ico?v=1749654891380"/>
+  
+  
+  <style>
+
+    html {
+      overflow-x: hidden;  
+    }
+    
+    body {
+  font-family: 'Playfair Display', serif;
+      background-color: #f6d1c1	;
+      color: #333;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+/*  background-image: url('https://cdn.glitch.global/cbe7a86a-c58a-4a44-912e-7c23b197bdaa/WhatsApp%20Image%202025-06-16%20at%2003.23.51.jpeg?v=1750004623381');
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.1); /* black with 50% transparency */
+     
+  background-position: center;    /* center the image */
+  background-repeat: repeat;   /* no repeating */
+  background-attachment: fixed;   /* stays fixed on scroll */
+
+    }
+
+    
+    header {
+      background-color: #800020;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #800020;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+    
+    .total-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.total-text {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #800020;
+  font-weight: bold;
+}
+
+.order-btn,
+.clear-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.order-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.clear-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.clear-btn:hover {
+  background-color: #ccc;
+}
+   
+
+.wine-item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  text-align: center;
+  margin: 16px 16px 16px 16px;
+  flex: 0 0 auto; /* prevents shrinking */
+  width: 150px;
+  height: 450px;
+}
+    
+
+.wine-items::-webkit-scrollbar {
+  display: none;  /* for Chrome, Safari, and Opera */
+}    
+    
+.wine-item:hover {
+  transform: translateY(-5px);
+}
+
+.wine-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.wine-item h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #800020;
+}
+
+.wine-item p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.wine-item button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  font-family: inherit;
+}
+
+.wine-item button.add {
+  background-color: #25D366;
+  color: white;
+}
+
+.wine-item button.add:hover {
+  background-color: #1ebe5d;
+}
+
+.wine-item button.remove {
+  background-color: #ff5c5c;
+  color: white;
+}
+
+.wine-item button.remove:hover {
+  background-color: #d44;
+}
+
+.wine-item hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+    
+    .total {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.total p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #800020;
+  margin-bottom: 20px;
+}
+
+.total button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease-in-out;
+}
+
+#pay-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+#pay-btn:hover {
+  background-color: #1ebe5d;
+}
+
+#clear-order-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+#clear-order-btn:hover {
+  background-color: #ccc;
+}
+
+    
+    
+    .contact {
+  background-color: #f6d1c1	;
+  border-top: 2px solid #800020;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #800020;
+}
+
+.contact p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.contact .form-group {
+  width: 90%;
+  max-width: 400px;
+  margin: 15px auto;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+  border-color: #800020;
+  outline: none;
+}
+
+.contact .total {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact .total p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #800020;
+  margin-bottom: 15px;
+}
+
+.contact button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease-in-out;
+}
+
+#pay-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+#pay-btn:hover {
+  background-color: #1ebe5d;
+}
+
+#clear-order-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+#clear-order-btn:hover {
+  background-color: #ccc;
+}
+    
+    .wine-items {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+     
+}
+    
+   
+.description-popup {
+  font-size: 13px;
+  color: #333;
+}
+    
+h1, p {
+  opacity: 0.5;
+  animation: fadeInText 1s ease-in forwards;
+}
+
+/* Optional stagger effect */
+h1 {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  opacity: 0;
+  transform: translateX(50px); /* start slightly to the right */
+  animation: slideInRight 1.5s ease-out forwards;
+  animation-delay: 0s; /* delay if you want it after the h1 */
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* end in original position */
+  }
+}
+       
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wine Delivery - Kotor, Montenegro</h1>
+    <p>Fast and Local Wine Delivery</p>
+  </header>
+
+  <div class="wine-items" id="wineItems">
+  </div>
+  
+  
+
+<section class="contact">
+  <h2>Order Now</h2>
+  <p>Contact us on WhatsApp for fast delivery in Kotor.</p>
+
+  <div class="form-group">
+    <input type="text" id="name" placeholder="Your Name">
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="address" placeholder="Delivery Address">
+  </div>
+
+  <div class="form-group">
+    <textarea id="notes" placeholder="Additional Notes (optional)"></textarea>
+  </div>
+
+  <div class="form-group">
+    <button id="open-map-btn" type="button">📍 To See Inputed Address in Google Maps</button>
+  </div>
+
+  <div class="total">
+    <p>Total: €<span id="total">0</span></p>
+    <button id="pay-btn">📞 Make Order by WhatsApp</button>
+    <button id="clear-order-btn">Clear Order</button>
+  </div>
+</section>
+
+  
+  
+  <footer>
+    &copy; 2025 Wine Delivery Kotor – All rights reserved
+  </footer>
+
+  <script src="map.js"></script>
+  <script src="script.js"></script>
+  <script src="scroll.js"></script>
+
+</body>
+</html>
